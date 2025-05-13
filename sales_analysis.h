@@ -11,11 +11,13 @@ private:
     std::vector<double> aSales;
 
 public:
+//constructor con valores predeterminados para pDepartmentName (string vacio) y pEmployeeCount (0)
     TSalesDepartment(std::string pDepartmentName = "", int pEmployeeCount = 0);
-    ~TSalesDepartment();
+    ~TSalesDepartment(); 
 
     void AddEmployeeSales(double pSale);
     double CalculateAverageSales() const;
+    //metodo que compara si el promedio supero cierta cifra (50000)
     bool MeetsPerformanceThreshold() const;
     int FindTopPerformingEmployeeIndex() const;
 
@@ -24,4 +26,4 @@ public:
 
 typedef TSalesDepartment SalesDepartment;
 
-#endif
+#endif// :)

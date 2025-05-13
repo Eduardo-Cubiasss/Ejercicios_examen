@@ -37,14 +37,15 @@ int main() {
         for (const auto& departamento : departamentos) {
             std::cout << "Departamento: " << departamento.GetDepartmentName() << std::endl;
             
-            // Calcular y mostrar promedio de ventas
+            // Calcular y mostrar promedio de ventas redondeado a 2 decimales
             double avgSales = departamento.CalculateAverageSales();
             std::cout << "Promedio de Ventas: $" 
                       << std::fixed << std::setprecision(2) 
                       << avgSales << std::endl;
 
-            // Verificar umbral de rendimiento
-            std::cout << "Cumple Umbral de Rendimiento: " 
+            // Verificar umbral de rendimiento (si el promedio de ventas supera lo esperado )
+            std::cout << "Cumple Umbral de Rendimiento: "
+            //opera con ternarios si la funcion devulve true se muestra si en caso de que devuelva false imprime No 
                       << (departamento.MeetsPerformanceThreshold() ? "Sí" : "No") << std::endl;
 
             // Encontrar mejor empleado
