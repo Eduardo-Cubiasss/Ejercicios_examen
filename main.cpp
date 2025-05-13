@@ -12,7 +12,7 @@ int main() {
 
         // Agregar ventas por empleado en cada departamento
         departamento1.addEmployeeSales(65000.50);
-        departamento1.addEmployeeSales(55000.75);
+        departamento1.addEmployeeSales(55000.75);   
         departamento1.addEmployeeSales(48000.25);
 
         departamento2.addEmployeeSales(72000.90);
